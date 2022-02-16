@@ -1,0 +1,40 @@
+//Task 4 write a mirror procedure(str1, str2) which returns in str2, the mirror image of str1.
+
+PROCEDURE mirror(str1,str2)
+VAR
+    str1,str2: STRING;
+    j: INTEGER;
+BEGIN
+    j=0
+    FOR i FROM str1.length-1 TO 0 STEP 1  DO
+        str[j]=str[i];
+        j++
+    END_FOR
+    write(str2);
+END
+
+// CHECKPOINT
+
+PROCEDURE dot_product (tab1, tab2)
+VAR
+    ps: INTEGER;
+    v1:= tab1: ARRAY_OF type;
+    v2:= tab2: ARRAY_OF type;
+    n: INTEGER;
+    i,j: INTEGER;
+    res: INTEGER;
+    res_ps: ARRAY_OF type;
+BEGIN
+    Read(tab1);
+    Read(tab2);
+    FOR i FROM 0 TO n.length-1 STEP 1  DO
+        FOR j FROM i+1 TO n.length-1 STEP 1 DO
+            ps:=tab1[i]*tab2[j];
+            res_ps.add(ps);
+        END_FOR
+    END_FOR
+    res :=res_ps[0] + res_ps[1];
+    IF (res=0) THEN
+        Alors les vecteurs sont orthogonaux.
+    END_IF
+END
